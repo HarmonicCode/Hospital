@@ -1,0 +1,94 @@
+.navbar {
+    background-color:#9FE2BF; /* Change background color to green */
+    padding: 10px 20px; /* Add some padding for spacing */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and menu items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .navbar-container {
+    display: flex; /* Use flexbox to keep elements in line */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    justify-content: space-between; /* Space between logo and menu items */
+  }
+  
+  .navbar-logo {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center logo vertically */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Ensure logo text is white */
+  }
+   
+  .navbar-logo img {
+    width: 190px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px; /* Add some margin to separate the logo and text */
+  }
+  
+  .menu-icon {
+    display: none; /* Initially hide the menu icon */
+    font-size: 1.8rem;
+    color: white; /* Ensure icon color is white */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  /* Styling for nav menu */
+  .nav-menu {
+    display: flex; /* Align nav items in a row */
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-item {
+    list-style: none;
+    display: inline-block; /* Align items in a row */
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: #fff; /* White color for nav links */
+    padding: 10px 15px; /* Add padding around links */
+    transition: all 0.3s ease-out; /* Smooth transition */
+  }
+  
+  .nav-links:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #242424; /* Text color on hover */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Mobile menu */
+  .nav-menu.active {
+    display: flex; /* Show nav menu when active */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width */
+    position: absolute; /* Position relative to navbar */
+    top: 80px; /* Position below navbar */
+    left: 0; /* Align to left */
+    background-color: green; /* Ensure background color matches */
+    z-index: 1; /* Ensure it's on top */
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 960px) {
+    .navbar-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+    }
+  
+    .nav-menu {
+      display: none; /* Hide nav menu initially */
+      flex-direction: column; /* Stack items vertically */
+      width: 100%; /* Full width */
+    }
+  
+    .nav-menu.active {
+      display: block; /* Show nav menu when active */
+    }
+  }
+  

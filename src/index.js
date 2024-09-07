@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Create a single root for the application
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the App component inside React.StrictMode
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Measure performance in your app
+reportWebVitals();  // Optional: You can pass a function to log results or send to an analytics endpoint
