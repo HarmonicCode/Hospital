@@ -1,5 +1,5 @@
 import "../../App.css";
-import IntroSection from "./IntroSection";
+import IntroSection from '../IntroSection';  // Correct path from pages to components
 
 
 function Home(){
