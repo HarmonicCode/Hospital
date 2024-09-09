@@ -1,69 +1,84 @@
-img{
-    object-fit:cover;
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:-1;
+
+
+
+.Intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: white;  /* Set background to white */
+    padding: 20px;  /* Optional padding */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
 
-.Intro-container{
-    height:100vh;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    box-shadow:inset 0 0 0 1000px  rgba(0,0,0,0.2);
-    object-fit:contain;  
-    justify-content:center;  
-    
+.Intro-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    font-size:20px;
 }
 
-.Intro-container >h1{
-    color:#fff;
-    font-size:100px;
-    margin-top:-100px;
-
+/* Add styles for the boxed paragraph */
+.Intro-box {
+    background-color:white; /* Light gray background */
+    border: 1px solid #ddd;    /* Light border */
+    padding: 20px;             /* Padding inside the box */
+    border-radius: 115px;        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 90%;            /* Restrict max width of the box */
+    margin: 20px 0;            /* Add margin around the box */
 }
 
-.Intro-container >p{
-    margin-top:8px;
-    color:#fff;
-    font-size:32px;
-
+.Intro-text > h1 {
+    color: black;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
 }
 
-.Intro-btns{
-    margin-top:32px;
-}
-.Intro-btns .btn{
-    margin:6px;
+.Intro-btns {
+    margin-top: 32px;
 }
 
-@media screen and (max-width:960px){
-    .Intro.container>h1 {
-        font-size:70px;
-        margin-top:-150px;
+.Intro-btns .btn {
+    margin: 6px;
+    justify-items: center;
+}
+
+.Intro-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: -10px; /* Remove margin from the top to move the image upwards */
+    align-self: flex-start; /* Align image to the top of the container */
+}
+
+@media screen and (max-width: 960px) {
+    .Intro-text > h1 {
+        font-size: 40px;
     }
 }
-
 
 @media screen and (max-width: 768px) {
-    .Intro-container >h1{
-        font-size: 50px;
-        margin-top:-100px;
-    }
-    
-    
-    .Intro-container >p{
-        font-size:30px;
-    }
-    
-    .btn-mobile{
-        display:block;
-        text-decoration:none;
-    }
-    .btn{
-        width:100%;
+    .Intro-container {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
+    .Intro-text {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .Intro-image {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .Intro-btns {
+        justify-content: center;
+    }
 }

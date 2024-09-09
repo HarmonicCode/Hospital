@@ -13,6 +13,12 @@
   }
 }
 
+body {
+  background-color: white; /* Set the entire website background to white */
+  margin: 0;  /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Optional: set a global font */
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
