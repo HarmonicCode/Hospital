@@ -1,7 +1,6 @@
 import React from "react";
 import "./Button.css";
-import Login from './components/Login';
-import Signup from "./components/Signup";
+
 import { Link } from "react-router-dom";
 const STYLES = ["btn--primary", "btn--outline"];
 const SIZES = ["btn--medium", "btn--large"];
