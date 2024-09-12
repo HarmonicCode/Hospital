@@ -5,6 +5,8 @@ import Login from './components/Login';
 import './App.css';
 import Home from './components/Pages/Home';
 
+
+
 function App() {
   return (
     <Router>
@@ -12,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} /> {/* Updated Route syntax */}
         <Route path="/Login" element={<Login />} /> {/* Add more routes as needed */}
-        <Route path="/sign-up" element={<Sign-up />} />
+       
       </Routes>
     </Router>
   );
