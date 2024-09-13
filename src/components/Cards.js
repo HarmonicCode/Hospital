@@ -1,27 +1,53 @@
 import React from 'react'
 import CardItem from "./CardItem";
-import "./Cards.css";
-
-
+import "./Cards.css"
 
 function Cards() {
   return (
-    <div className ="cards">
-        <h1>Check out these Epic destination</h1>
+    <div className="cards">
+        <h1>Specialities</h1>
         <div className="cards_container">
-        <div className="cards_wrapper">
-
-                <ul className ="cards_item">
-                    <CardItem
-                    src ="images/doctor.avif"
-                    text="Find a doctor"
-                    label="doctor"
+            <div className="cards_wrapper">
+                <ul className="cards_items">
+                    <CardItem 
+                    src ="images/orthopedics.jpg" 
+                    text ="Orthopedics"
                     path="/services"
                     />
-
+                    <CardItem 
+                    src ="images/physician.jpg" 
+                    text ="General Physician"
+                    path="/services"
+                    />
+                    <CardItem 
+                    src ="images/dentist.jpg" 
+                    text ="Dentist"
+                    path="/services"
+                    />
+                    <CardItem 
+                    src ="images/gynecologist.jpg" 
+                    text ="Gynecologist"
+                    path="/services"
+                    />
+                    <CardItem 
+                    src ="images/surgeon.jpg" 
+                    text ="Surgeon"
+                    path="/services"
+                    />
+                    <CardItem 
+                    src ="images/Physiotherapist.png" 
+                    text ="Physiotherapist"
+                    path="/services"
+                    />
+                    <CardItem 
+                    src ="images/nutritionist.jpg" 
+                    text ="Nutritionist"
+                    path="/services"
+                    />
                 </ul>
             </div>
         </div>
+
       
     </div>
   )
