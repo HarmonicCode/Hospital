@@ -1,15 +1,18 @@
-import "../../App.css";
-import IntroSection from '../IntroSection';  // Correct path from pages to components
+import "../../App.css";  
+import IntroSection from '../IntroSection';  
 import Cards from "../Cards";
 import Footer from "../Footer";
+import FeaturesSection from "../FeaturesSection";
 
 
-function Home(){
+function Home() {
     return (
         <>
-        <IntroSection />
-        <Cards />
-        <Footer />
+            <IntroSection />
+            <Cards />
+            <FeaturesSection />
+            
+            <Footer />
         </>
     );
 }
